@@ -1,0 +1,115 @@
+.header {
+    background: #222222;
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left-nav {
+        & a {
+            margin-right: 41px;
+            text-decoration: none;
+        }
+    }
+    &__right-nav {
+        & a:not(:last-child) {
+            margin-right: 33px;
+        }
+        & a:last-child {
+            position: relative;
+        }
+    }
+    .cart-number {
+        position: absolute;
+        color: white;
+        border-radius: 50%;
+        background-color: red;
+        top: -21px;
+        right: -10px;
+        width: 19px;
+        height: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+.header-content {
+    background: #F1E4E6;
+    height: 148px;
+
+    &__promo-text {
+        color: $maincolor;
+    }
+    &__wrap {
+        height: 100%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+}
+
+.content-promo {
+    background: #F1E4E6;
+    height: 764px;
+
+    &__wrap {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-image: url(images/men.png);
+        background-repeat: no-repeat;
+        background-position: -228px 0;
+    }
+}
+
+.promo-text {
+    max-width: 377px;
+    border-left:12px solid $maincolor;
+    padding-left: 20px;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.4px;
+    color: #222222;
+
+    &__brand-name {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        color: #222222;
+    }
+    &__red-style {
+        color: $maincolor;
+    }
+ }
+
+.header-content__breadcrumb {
+    padding: 10px 0 10px 16px;
+    list-style: none;
+
+    & li {
+        display: inline;
+        font-size: 14px;
+
+        & a {
+            color: #636363;
+            text-decoration: none;
+        }
+    }
+    & li+li:before {
+        padding: 3px;
+        color: #636363;
+        content: "/\00a0";
+    }
+    & :last-child > a {
+        color: $maincolor;
+    }
+}

@@ -393,11 +393,12 @@ html, body {
         & span {
             color: #6F6E6E;
         }
-        &__quantity {
-            font-size: 18px;
-            border: 1px solid #EAEAEA;
-            padding: 1px 16px
-        }
+    }
+    &__quantity {
+        width: 44px;
+        height: 25px;
+        border: 1px solid #EAEAEA;
+        text-align: center;
     }
 }
 
@@ -584,29 +585,57 @@ html, body {
     }
 }
 
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #EBEBEB;
+    width: 244px;
+    height: 44px;
+    padding: 12px 16px;
+    margin:0 auto 96px;
+
+    & a {
+        color: #EBEBEB;
+        text-decoration: none;
+
+        &:hover {
+            color: $maincolor;
+        }
+    }
+    & a:first-child {
+        color: #000000;
+
+        &:hover {
+            color: $maincolor;
+        }
+    }
+    & a:last-child {
+        color: #000000;
+
+        &:hover {
+            color: $maincolor;
+        }
+    }
+}
+
 .filter-wrap {
     width: 100%;
     margin: 51px 0 64px;
     display: flex;
+    position: relative;
 }
 
 .filter {
     width: 360px;
     background-color: #FFFFFF;
-    box-sizing: border-box;
     position: absolute;
-    outline: none;
-    border: none;
+    top:-16px;
     z-index: 2;
     padding: 16px 0 0 16px;
 
-    &-content {
-        position: absolute;
-        background-color: #FFFFFF;
-        width: 360px;
-        left: 0;
-        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    }
+    &-content :first-child {
+        margin-top: 18px;
+    }    
     &:hover {
         cursor: default;
     }
@@ -620,10 +649,11 @@ html, body {
         outline: none;
         border: none;
     }
-    & > summary {
+    & summary {
         list-style: none;
         font-weight: bold;
-    
+        color: #6F6E6E;
+
         &:hover {
             color: $maincolor;
             cursor: pointer;
@@ -632,9 +662,10 @@ html, body {
     &-title > summary {
         list-style: none;
         padding: 11px;
-        margin:18px 0;
+        margin-bottom: 18px;
         border-left: 5px solid $maincolor;
         border-bottom: 1px solid #EBEBEB;
+        color: #6F6E6E;
     
         &:hover {
             color: $maincolor;
@@ -646,10 +677,6 @@ html, body {
     }
     &-item {
         list-style-type: none;
-        
-        &:not(:last-child) {
-            margin-bottom: 11px;
-        }
     }
     &-link {
         text-decoration: none;
@@ -664,37 +691,59 @@ html, body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 16px;
+        margin: 0 0 18px 16px;
     } 
 }
 
 .filtercheck-wrap {
+    width: 700px;
+    justify-content: flex-end;
     display: flex;
-    justify-content: center;
 }
+
 .filtercheck {
-    background-color: #FFFFFF;
     box-sizing: border-box;
     position: relative;
     outline: none;
     border: none;
     z-index: 2;
-    padding: 0 16px;
+    padding: 0 10px;
+
+    &:hover .filtercheck-content {
+        display: flex;
+    }
 
     &:first-child {
-        margin-left:370px;
+        margin-left: 375px;
     }
     &-content {
         position: absolute;
-        padding:15px;
+        padding:7px 11px 11px 0;
         background-color: #FFFFFF;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        display: none;
+        color: #6F6E6E;
+        white-space: nowrap;
     }
-    &:hover {
-        cursor: default;
+    &-title {
+        color: #6F6E6E;
+        white-space: nowrap;
+    
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &-item {
+        list-style-type: none;
+    }
+    &-checkbox {
+        opacity: 0.8;
+        margin: 0 9px 0 9px;
+    }
+    & i {
+        margin-left: 10px;
     }
 }
-
 
 
 

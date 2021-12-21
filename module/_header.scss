@@ -1,4 +1,5 @@
 .header {
+    height: 75px;
     background: #222222;
     display: flex;
     justify-content: space-between;
@@ -66,7 +67,7 @@
 
 .content-promo {
     background: #F1E4E6;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 75px);
 
     &__wrap {
         height: 100%;
@@ -112,6 +113,10 @@
         & a {
             color: #636363;
             text-decoration: none;
+
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
     & li+li:before {
@@ -121,5 +126,81 @@
     }
     & :last-child > a {
         color: $maincolor;
+    }
+}
+
+.burger {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #222;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+
+    &__menu {
+        margin-right: 33px;
+    
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+    &__nav {
+        position: absolute;
+        top: 56px;
+        right: 0;
+        z-index: 10;
+        width: 232px;
+        background-color: #fff;
+        height: calc(100vh - 75px);
+        padding: 20px;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+    &__input {
+        display: none;
+    }
+    &__input:checked~.burger__nav {
+        display: block;
+    }
+    &__input:not(checked)~.burger__nav {
+        display: none;
+    }
+    &__wrap {
+        position: relative;
+    }
+    &__close {
+        position: absolute;
+        right: -5px;
+        top: -24px;
+
+        & svg:hover {
+            fill: $maincolor;
+            cursor: pointer; 
+        }      
+    }
+    &__title {
+        color: #000000;
+        font-size: 14px bold;
+        margin: 17px 0 4px 14px;
+    }
+    &__heading {
+        color: $maincolor;
+        font-size: 14px;
+        margin: 20px 0 0 14px;
+    }
+    &__link {
+        color: #6F6E6E;
+        font-size: 14px;
+        list-style-type: none;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    &__item {
+        list-style: none;
+        margin: 12px 0 0 34.5px;
     }
 }

@@ -77,6 +77,9 @@
             margin-left: 22px;
         }
     }
+    .filtercheck-wrap {
+        width: 100%;
+    }
 }
 
 
@@ -239,7 +242,8 @@
             }
         }
         &__item-text {
-            padding-right: 30px;
+            padding: 15px 30px 0 15px;
+
 
             & h3 {
                 font-size: 16px;
@@ -273,6 +277,12 @@
     .cartbox-total {
         margin: 48px 0 96px;
         width: 100%;
+    }
+    .filter summary span {
+        display: none;
+    }
+    .burger__menu {
+        margin-right: 0;
     }
 }
 

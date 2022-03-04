@@ -24,19 +24,19 @@
         padding-top: 50px;
     }
     &__delivery {
-        background-image: url(images/gruzovik.svg);
+        background-image: url(../../images/gruzovik.svg);
     }
     &__discount {
-        background-image: url(images/percent.png);
+        background-image: url(../../images/percent.png);
     }
     &__quality {
-        background-image: url(images/korona.png);
+        background-image: url(../../images/korona.png);
     }
 }
 
 .footer-subscription {
     height: 448px;
-    background-image: url(images/photo_footer.jpg);
+    background-image: url(../../images/photo_footer.jpg);
     background-repeat:no-repeat;
     background-size: 100% 100%;
 
@@ -48,7 +48,7 @@
     }
     &__quote {
         max-width: 360px;
-        background-image: url(images/photo.png);
+        background-image: url(../../images/photo.png);
         background-repeat: no-repeat;
         background-position: top;
         padding-top: 120px;

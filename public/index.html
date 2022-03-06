@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GB_e-shop</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/de45191766.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="page">
+<div id="app">
+    <error ref="error"></error>
+    <header class="header">
+        <div class="container header__wrap">
+            <nav class="header__left-nav">
+                <img class="logo-notlink" src="images/logo.png" alt="logo">
+                <img class="search-img" src="images/find.svg" alt="find">
+                <search></search>
+            </nav>
+
+            <nav class="header__right-nav">
+                <label class="burger__menu" for="burger"><img src="images/burger.svg" alt="menu"></label>
+                <a href="registration.html"><img src="images/login.svg" alt="login"></a>
+                <cart ref="cart"></cart>
+            </nav>
+
+        </div>
+
+        <div class="burger">
+            <input class="burger__input" type="checkbox" id="burger">
+            <nav class="burger__nav nav">
+                <div class="burger__wrap">
+                    <label class="burger__close" for="burger">
+                        <svg width="12" height="12" viewBox="0 0 18 18"
+                             fill="#575757" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"/>
+                        </svg>
+                    </label>
+                    <h3 class="burger__title">MENU</h3>
+                    <h3 class="burger__heading">MAN</h3>
+                    <ul class="burger__list">
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">Accessories</a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">Bags</a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">Denim</a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">T-Shirts</a>
+                        </li>
+                    </ul>
+
+                    <h3 class="burger__heading">WOMAN</h3>
+                    <ul class="burger__list">
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">Accessories</a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">Jackets & Coats</a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">Polos</a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">T-Shirts</a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">Shirts</a>
+                        </li>
+                    </ul>
+
+                    <h3 class="burger__heading">KIDS</h3>
+                    <ul class="burger__list">
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">Accessories</a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">Jackets & Coats</a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">Polos</a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">T-Shirts</a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">Shirts</a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="#" class="burger__link">Bags</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="content-promo">
+            <div class="container content-promo__wrap">
+                <h1 class="promo-text"><span class="promo-text__brand-name">THE BRAND</span>
+                    <p> OF LUXURIOUS <span class="promo-text__red-style">FASHION</span>
+                    </p>
+                </h1>
+            </div>
+        </section>
+
+        <div class="container">
+
+            <section class="cards-catalog">
+                <div class="cards-catalog__item cards-catalog__for-women">
+                    <h3>30% OFF</h3>
+                    <a href="catalog.html">
+                        <h1>FOR WOMEN</h1>
+                    </a>
+                </div>
+                <div class="cards-catalog__item cards-catalog__for-men">
+                    <h3>HOT DEAL</h3>
+                    <a href="catalog.html">
+                        <h1>FOR MEN</h1>
+                    </a>
+                </div>
+                <div class="cards-catalog__item cards-catalog__for-kids">
+                    <h3>NEW ARRIVALS</h3>
+                    <a href="catalog.html">
+                        <h1>FOR KIDS</h1>
+                    </a>
+                </div>
+                <div class="cards-catalog__item cards-catalog__accesories">
+                    <h3>LUXIROUS & TRENDY</h3>
+                    <a href="catalog.html">
+                        <h1>ACCESORIES</h1>
+                    </a>
+                </div>
+            </section>
+
+            <div class="fetured-items">
+                <h1>Fetured Items</h1>
+                <p>Shop for items based on what we featured in this week</p>
+            </div>
+
+
+            <products ref="products"></products>
+
+            <a class="link_allProducts" href="catalog.html">Browse All Product</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <section class="footer-info">
+            <div class="container footer-info__wrap">
+                <div class="footer-info__delivery">
+                    <h3>Free Delivery</h3><br>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.
+                    </p>
+                </div>
+                <div class="footer-info__discount">
+                    <h3>Sales & discounts</h3><br>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.
+                    </p>
+                </div>
+                <div class="footer-info__quality">
+                    <h3>Quality assurance</h3><br>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                        with extensive models.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-subscription">
+            <div class="container footer-subscription__wrap">
+                <div class="footer-subscription__quote">
+                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                        purus condimentum“</p>
+                </div>
+                <div class="footer-subscription__subscribe">
+                    <h1>SUBSCRIBE</h1>
+                    <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form action="#" class="email">
+                        <input type="email" class="email__field" placeholder="Enter Your Email" required>
+                        <input type="submit" class="email__button" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-copyright">
+            <div class="container footer-copyright__wrap">
+                <p>&copy; 2021 Brand All Rights Reserved.</p>
+                <div class="social-links">
+                    <div class="social-links__item">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="social-links__item">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="social-links__item">
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                    <div class="social-links__item">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+</div>
+
+<script src="js/vue.js"></script>
+<script src="js/ProductComponent.js"></script>
+<script src="js/CartComponent.js"></script>
+<script src="js/SearchComponent.js"></script>
+<script src="js/ErrorComponent.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

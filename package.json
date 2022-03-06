@@ -1,0 +1,27 @@
+{
+  "name": "gb_e-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build-auto": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KapasinIgor/GB_e-shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KapasinIgor/GB_e-shop/issues"
+  },
+  "homepage": "https://github.com/KapasinIgor/GB_e-shop#readme"
+}

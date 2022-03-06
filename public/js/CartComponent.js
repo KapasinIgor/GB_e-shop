@@ -86,3 +86,4 @@ Vue.component('cart-item', {
                 </div>
     `
 })
+
